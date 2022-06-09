@@ -101,8 +101,7 @@ body {
   color: #e2e3ed;
 }
  
-ul, 
-ol {
+ul, ol {
  list-style-type: none;
  margin: 0;
  padding: 0;
