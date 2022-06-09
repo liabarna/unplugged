@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
    
 
-   /* General Styles */
+/* General Styles */
  
 html {
 	font-size: 16px;
@@ -104,6 +104,8 @@ body {
 ul, 
 ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
  
 a {
@@ -115,6 +117,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -126,7 +129,7 @@ h4 {
 }
  
 p {
-	font-size: 0.875 em;
+	font-size: 0.875em;
   line-height: 1.285;
 }
  
@@ -142,7 +145,7 @@ figure {
   margin: 0;
 }
 
-content-wrapper {
+.content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
@@ -266,7 +269,7 @@ margin: 20px 0;
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -328,6 +331,7 @@ input[type=button] {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features article {
@@ -347,6 +351,7 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
   background: #2a423a; 
+  padding-bottom: 30px;
 }
 
 .reviews h2 {
@@ -363,23 +368,11 @@ input[type=button] {
 /* -------------------- About page -------------------- */
 
 .mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
-}
-
-.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
-}
-
-.contact-content p {
-margin: 0;
 }
 
 .map figure {
@@ -396,6 +389,18 @@ margin: 0;
   position: absolute; 
   top: 0; 
   left: 0; 
+}
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 
@@ -608,7 +613,7 @@ flex-basis: 50%;
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 .features i {
@@ -616,6 +621,7 @@ flex-basis: 50%;
 }
 
 /* Reviews */
+
 .reviews article {
 display: flex;
 justify-content: space-between;
@@ -635,6 +641,7 @@ justify-content: space-between;
 }
 
 /* Footer */
+
 footer .content-wrapper {
   width: 65%;
   margin: 100px 0;
@@ -644,6 +651,7 @@ footer .content-wrapper {
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-direction: row;
 }
 
 footer .contact {
@@ -698,7 +706,7 @@ footer .copyright {
   font-size: 1.5em;
 }
 
-.map-figure {
+.map figure {
   padding-bottom: 45.5%;
 }
 
@@ -711,7 +719,7 @@ justify-content: space-between;
 }
 
 .faq-content {
-flex-basis: 40%;
+flex-basis: 45%;
 }
 
 .faq h2 {
@@ -741,8 +749,7 @@ h2 {
 font-size: 2.25em;
 }
 
-h3,
-h4 {
+h3, h4 {
 font-size: 1.875em;
 }
 
@@ -802,7 +809,7 @@ About Page
 ========================================================================== */
 .mission h2,
 .contact-section .content-wrapper h2 {
- width: 92%;
+ width: 95%;
  font-size: 3em;
 }
 
@@ -819,6 +826,7 @@ FAQ Page
 ========================================================================== */
 .faq h2 {
  width: 100%;
+ font-size: 3em;
 }
 
 .faq h4, .faq p {
